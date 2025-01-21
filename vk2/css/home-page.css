@@ -1,0 +1,114 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	text-align: center;
+	align-content: center;
+}
+
+.navbar {
+	display: inline-block;
+	width: 80rem;
+	height: 3rem;
+	background-color: #323643;
+	overflow: hidden;
+	padding: 10px 20px;
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.navbar a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 8px 16px;
+	transition: 0.3s;
+}
+
+.navbar a:hover {
+	color: #93deff;
+	text-decoration: underline;
+}
+
+.navbar a:active {
+	background-color: #93deff;
+	color: white;
+}
+
+#footer {
+	background-color: #323643;
+	color: white;
+	padding: 10px 0;
+	margin: 20px 0px;
+	height: 5rem;
+}
+
+#footer p {
+	text-align: center;
+}
+
+.title {
+	text-align: center;
+	padding: 10px;
+	margin: 20px;
+}
+
+.title h1 {
+	color: #2c3e50;
+	font-size: 24px;
+}
+
+.title h1 span {
+	color: #93deff;
+}
+
+.contact {
+	display: inline-block;
+	width: 80rem;
+	margin: 50px;
+	padding: 20px;
+	background-color: #606470;
+	border-radius: 5px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.contact h2 {
+	display: block;
+	align-content: center;
+	color: #93deff;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.contact h3 {
+	display: block;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.contact p {
+	display: inline-block;
+	margin: 10px 0;
+	width: 40rem;
+}
+
+.floater {
+	float: right;
+	background-color: #323643;
+	color: white;
+	width: 10rem;
+	transform: rotate(20deg);
+	position: relative;
+	right: -3rem;
+	top: -1rem;
+	font-size: 20px;
+}
