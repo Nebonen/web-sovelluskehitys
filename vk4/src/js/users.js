@@ -54,4 +54,18 @@ const addUser = async () => {
 	console.log(response);
 };
 
-export { getUsers, addUser };
+const getUserById = async () => {
+	event.preventDefault();
+	const id = document.querySelector('#id').value.trim();
+	const url = `http://localhost:3000/api/users/${id}`;
+	const user = await fetchData(url);
+
+	if (user.error) {
+		console.error('Virhe', user.error);
+		return;
+	}
+
+	console.log(user);
+};
+
+export { getUsers, addUser, getUserById };

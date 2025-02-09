@@ -138,6 +138,32 @@
             />
           </form>
         </div>
+        <div>
+          <h3>GET by ID</h3>
+
+          <p>
+            Hae käyttäjän tiedon IDn perusteella.
+          </p>
+
+          <pre style="overflow: auto">
+            GET http://localhost:3000/api/users/:id
+          </pre>
+          <form>
+            <label for="id">ID</label>
+            <input
+              id="id"
+              type="text"
+              name="id"
+              placeholder="1"
+            />
+            <input
+              name="submit"
+              type="submit"
+              value="Get User"
+              class="formget"
+            />
+          </form>
+        </div>
       </div>
 
       <!-- The actual snackbar -->
