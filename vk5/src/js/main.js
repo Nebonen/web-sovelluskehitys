@@ -2,6 +2,7 @@ import '../css/style.css';
 import '../css/snackbar.css';
 import { getItems } from './items.js';
 import { getUsers, addUser, getUserById } from './users.js';
+import { getDiaryEntries } from './entries.js';
 
 document.querySelector('#app').innerHTML = 'Moi tässä oman APIn harjoituksia';
 
@@ -16,3 +17,6 @@ addUserForm.addEventListener('click', addUser);
 
 const getUserByIdForm = document.querySelector('.formget');
 getUserByIdForm.addEventListener('click', getUserById);
+
+const getEntriesButton = document.querySelector('.get_entries');
+getEntriesButton.addEventListener('click', getDiaryEntries);
