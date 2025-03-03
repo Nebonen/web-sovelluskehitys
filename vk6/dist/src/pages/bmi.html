@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/bmi-calculation.js"></script>
+        <title>BMI laskin</title>
+      <link rel="stylesheet" crossorigin href="../../assets/bmi-9OuUzIgD.css">
+    </head>
+    <body>
+        <main id="container">
+            <nav class="navbar">
+                <a href="index.html">Koti</a>
+                <a href="#">BMI-laskuri</a>
+                <a href="#">Yhteystiedot</a>
+            </nav>
+
+            <img src="../../assets/bmi-ranges-CCBOuHwW.png" alt="Painoindeksi">
+
+            <h1>Painoindeksilaskuri / BMI-laskuri</h1>
+            <p>Painoindeksilaskurilla voit laskea pituuden ja painon perusteella painoindeksin (BMI, Body Mass Index).</p>
+
+            <form id="bmi-form">
+                <label for="weight">Anna painosi:</label>
+                <input type="number" id="weight" placeholder="kg" required><br><br>
+
+                <label for="height">Anna pituutesi:</label>
+                <input type="number" id="height" placeholder="cm" required><br><br>
+
+                <button type="button" onclick="calculateBMI()">Laske indeksi</button>
+            </form>
+
+            <h2>Mittaustuloksesi: <span id="bmi-result">0</span></h2>
+
+            <table id="result-table">
+                <tr id="underweight-row">
+                    <td>Alipaino</td>
+                    <td>0 - 18.5</td>
+                </tr>
+                <tr id="normal-row">
+                    <td>Normaali paino</td>
+                    <td>18.5 - 25</td>
+                </tr>
+                <tr id="overweight-row">
+                    <td>Ylipaino</td>
+                    <td>25.0 - 30.0</td>
+                </tr>
+            </table>
+
+            <div id="bmi-analysis">
+                <p>Analyysi: Tähän saat tietoa painoindeksistäsi</p>
+            </div>
+
+            <footer id="footer">
+				<p>HRVSense 2025</p>
+			</footer>
+        </main>
+    </body>
+</html>
